@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+if [ `id -u` != 0 ]; then
+  echo "Error: install_nginx must be executed by root"
+  exit -1
+fi
+
+yum -y install epel-release
+yum -y install nginx
+systemctl enable nginx
+systemctl start nginx
