@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+if [ `id -u` != 0 ]; then
+  echo "Error: install_certbot must be executed by root"
+  exit -1
+fi
+
+yum -y install epel-release
+yum -y install certbot
+
+#certbot certonly --standalone -d example.com -d www.example.com

@@ -10,8 +10,8 @@ else
 fi
 
 # 1. Install certbot
-echo "Install certbot - not implemented"
-#./install_certbot
+echo "Installing certbot"
+./install_certbot
 
 # 2. Get let's encrypt certificate
 echo "Get ssl certificate - not implemented"
