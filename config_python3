@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+if [ `id -u` != 0 ]; then
+  echo "Error: config_uwsgi must be executed by root"
+  exit -1
+fi
+
+python3 -m pip install --upgrade pip
+python3 -m pip install virtualenv

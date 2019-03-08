@@ -41,7 +41,15 @@ echo "Installing mariadb"
 echo "Configure mariadb - not implemented"
 #./config_mariadb
 
-# 9. Done
+# 9. Install python3
+echo "Installing python3"
+./install_python3
+
+# 10. Configure python3
+echo "Configure python3"
+./config_python3
+
+# 11. Done
 echo "Done"
 read -n 1 -s -r -p "Press any key to continue..."
 echo ""
