@@ -34,8 +34,8 @@ echo "Configure exim  - not implemented"
 #./config_exim
 
 # 7. Install mariadb
-echo "Install mariadb - not implemented"
-#./install_mariadb
+echo "Installing mariadb"
+./install_mariadb
 
 # 8. Configure mariadb
 echo "Configure mariadb - not implemented"

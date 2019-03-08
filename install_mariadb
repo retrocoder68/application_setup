@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+if [ `id -u` != 0 ]; then
+  echo "Error: install_mariadb must be executed by root"
+  exit -1
+fi
+
+curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | bash
+yum -y install MariaDB-server MariaDB-client
+systemctl start mariadb
+mysql_secure_installation
+systemctl enable mariadb
